@@ -1,0 +1,136 @@
+.intro-page {
+  background: #0f172a;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  gap: 40px;
+  margin-top: 40px, 0;
+}
+
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #cbd5f5;
+}
+
+.hero-buttons button {
+  margin-right: 15px;
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.hero-buttons .secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.hero-buttons :hover {
+  transform: scale(1.10);
+
+}
+
+/* Posters */
+.hero-posters {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-posters img {
+  width: 260px;
+  height: 380px;
+  object-fit: cover;   /* IMPORTANT */
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+} 
+
+.hero-posters img:hover {
+  transform: scale(1.08);
+}
+
+/* FEATURES */
+
+.features {
+  margin-top: 40px;
+  padding-top: 60px;
+}
+
+.showcase {
+  margin-top: 40px;
+  padding-top: 60px;
+}
+.features h2 {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.features {
+  padding: 80px;
+  text-align: center;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20pz;
+}
+
+.card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 14px;
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* SHOWCASE */
+.showcase {
+  padding: 80px;
+  text-align: center;
+}
+
+.poster-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.poster-row img {
+  width: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.poster-row img:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #020617;
+  color: #94a3b8;
+}

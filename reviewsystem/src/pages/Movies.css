@@ -1,0 +1,23 @@
+.page-container {
+  padding: 30px;
+  color: white;
+  background: #0f172a;
+  min-height: calc(100vh - 70px);
+}
+
+.page-container input {
+  width: 300px;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+.page-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.page-container li {
+  margin-bottom: 8px;
+}
