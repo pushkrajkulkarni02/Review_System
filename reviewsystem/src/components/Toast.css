@@ -1,0 +1,146 @@
+/* ─── TOAST CONTAINER ─── */
+.toast-container {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    pointer-events: none;
+}
+
+/* ─── TOAST ITEM ─── */
+.toast-item {
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 320px;
+    max-width: 440px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    animation: toast-slide-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.toast-item.toast-exit {
+    animation: toast-slide-out 0.35s cubic-bezier(0.55, 0, 1, 0.45) forwards;
+}
+
+/* ─── TYPE COLORS ─── */
+.toast-success {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.92), rgba(5, 150, 105, 0.92));
+    border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.toast-error {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.92), rgba(185, 28, 28, 0.92));
+    border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.toast-warning {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.92), rgba(217, 119, 6, 0.92));
+    border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.toast-info {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.92), rgba(29, 78, 216, 0.92));
+    border: 1px solid rgba(59, 130, 246, 0.4);
+}
+
+.toast-confirm {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.95), rgba(91, 33, 182, 0.95));
+    border: 1px solid rgba(139, 92, 246, 0.4);
+}
+
+/* ─── ICON ─── */
+.toast-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+/* ─── MESSAGE ─── */
+.toast-message {
+    flex: 1;
+    line-height: 1.4;
+}
+
+/* ─── CLOSE BUTTON ─── */
+.toast-close {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 4px;
+    transition: color 0.2s, transform 0.2s;
+    flex-shrink: 0;
+}
+
+.toast-close:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* ─── CONFIRM BUTTONS ─── */
+.toast-confirm-btns {
+    display: flex;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.toast-btn {
+    padding: 5px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.toast-btn:hover {
+    transform: scale(1.05);
+}
+
+.toast-btn-yes {
+    background: #fff;
+    color: #5b21b6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toast-btn-no {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+/* ─── ANIMATIONS ─── */
+@keyframes toast-slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(80px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+@keyframes toast-slide-out {
+    from {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(80px) scale(0.95);
+    }
+}

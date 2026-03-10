@@ -27,7 +27,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 }
 
 .profile-icon {
@@ -35,15 +35,6 @@
   cursor: pointer;
 }
 
-.logout-btn {
-  padding: 8px 14px;
-  background: #ef4444;
-  border: none;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-  font-size: 14px;
-}
 
 .navbar-center {
   display: flex;

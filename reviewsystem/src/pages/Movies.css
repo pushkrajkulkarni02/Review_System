@@ -1,7 +1,7 @@
 .page-container {
   padding: 30px;
   color: white;
-  background: #0f172a;
+  background: #020617;
   min-height: calc(100vh - 70px);
 }
 
@@ -20,4 +20,26 @@
 
 .page-container li {
   margin-bottom: 8px;
+}
+
+.add-btn {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-btn:hover {
+  background-color: #4338ca;
+  transform: translateY(-2px);
+}
+
+.add-btn:active {
+  transform: translateY(0);
 }

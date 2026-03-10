@@ -43,21 +43,21 @@ export default function Intro() {
       <section className="features">
         <h2>Why Choose Our Platform?</h2>
 
-        <div className="feature-cards">
-          <div className="card">
-            ⭐
+        <div className="feature-grid">
+          <div className="feature-card">
+            <span className="icon">⭐</span>
             <h3>Rate & Review</h3>
             <p>Share your honest opinion and see what others think.</p>
           </div>
 
-          <div className="card">
-            🎬
+          <div className="feature-card">
+            <span className="icon">🎬📚</span>
             <h3>Movies & Books</h3>
             <p>One place for entertainment and reading lovers.</p>
           </div>
 
-          <div className="card">
-            🔐
+          <div className="feature-card">
+            <span className="icon">🔐👤</span>
             <h3>Secure Accounts</h3>
             <p>User-friendly login and personalized experience.</p>
           </div>

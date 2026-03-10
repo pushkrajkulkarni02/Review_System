@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -23,14 +23,12 @@ function Navbar() {
       <div className="navbar-center">
         <span onClick={() => navigate("/movies")}>Movies</span>
         <span onClick={() => navigate("/books")}>Books</span>
+        <span onClick={() => navigate("/tvseries")}>TV Series</span>
       </div>
 
       {/* RIGHT */}
       <div className="navbar-right">
-        <div className="profile-icon">👤</div>
-        <button className="logout-btn" onClick={handleLogout}>
-          Logout
-        </button>
+        <div className="profile-icon" onClick={() => navigate("/profile")}>👤</div>
       </div>
     </nav>
   );
