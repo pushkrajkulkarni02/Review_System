@@ -93,7 +93,7 @@ function Movies() {
           </div>
         )}
 
-        {/* Only show default categories if not searching */}
+
         {search.trim() === "" && (
           <>
             <div className="row">
