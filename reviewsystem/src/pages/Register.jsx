@@ -47,22 +47,6 @@ function Register() {
         <form onSubmit={handleSubmit} className="auth-form">
           <h2>Register</h2>
 
-          <div className="role-selector">
-            <button
-              type="button"
-              className={role === "user" ? "active" : ""}
-              onClick={() => setRole("user")}
-            >
-              User
-            </button>
-            <button
-              type="button"
-              className={role === "admin" ? "active" : ""}
-              onClick={() => setRole("admin")}
-            >
-              Admin
-            </button>
-          </div>
 
           <input name="name" placeholder="Name" onChange={handleChange} required />
           <input name="email" type="email" placeholder="Email" onChange={handleChange} required />

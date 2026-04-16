@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
-import "./TvSeries.css";
+import "./MovieDetails.css";
 import axios from "axios";
 import toast from "../components/Toast";
 

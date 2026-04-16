@@ -51,3 +51,17 @@
 .navbar-center span:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  .app-name {
+    font-size: 16px;
+    display: none;
+  }
+  .navbar-center {
+    gap: 15px;
+    font-size: 14px;
+  }
+}
