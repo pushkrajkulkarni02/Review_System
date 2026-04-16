@@ -1,18 +1,19 @@
 # Dependencies
 node_modules/
-backend/node_modules/
 
 # Environment variables
 .env
-backend/.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel/
 
 # Build output
 dist/
 build/
-
-# Database backups
-backend/db_backup.sql
-backend/*.sql
 
 # Logs
 *.log
